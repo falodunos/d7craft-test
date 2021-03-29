@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 81c79c96-0a93-40a2-b643-590514c719c5 # Index Page
+handle: pageTitle
+instructions: ''
+name: 'Page Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

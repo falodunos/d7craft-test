@@ -1,0 +1,324 @@
+{% extends "index" %}
+
+{% block content %}
+
+	<!-- slider Area Start-->
+	<div class="slider-area ">
+		<div
+			class="slider-active">
+			<!-- Single Slider -->
+			<div class="single-slider slider-height d-flex align-items-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-8 col-lg-7 col-md-8">
+							<div class="hero__caption">
+								<span data-animation="fadeInLeft" data-delay=".1s">{{ entry.d7Committment}}</span>
+								<h1 data-animation="fadeInLeft" data-delay=".5s">{{ entry.d7Purpose }}</h1>
+								<p data-animation="fadeInLeft" data-delay=".9s"><p>{{ entry.d7Message }}</p></p>
+								<!-- Hero-btn -->
+								<div class="hero__btn" data-animation="fadeInLeft" data-delay="1.1s">
+									<a href="industries.html" class="btn hero-btn">{{ entry.d7ServicesLink }}</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Single Slider -->
+			<div class="single-slider slider-height d-flex align-items-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-8 col-lg-7 col-md-8">
+							<div class="hero__caption">
+								<span data-animation="fadeInLeft" data-delay=".1s">{{ entry.d7Committment}}</span>
+								<h1 data-animation="fadeInLeft" data-delay=".5s">{{ entry.d7Purpose }}</h1>
+								<p data-animation="fadeInLeft" data-delay=".9s">{{ entry.d7Message }}</p>
+								<!-- Hero-btn -->
+								<div class="hero__btn" data-animation="fadeInLeft" data-delay="1.1s">
+									<a href="industries.html" class="btn hero-btn">{{ entry.d7ServicesLink }}</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- slider Area End-->
+	<!--? Categories Area Start -->
+	<div class="categories-area section-padding30">
+		<div class="container">
+			<div class="row">
+				<div
+					class="col-lg-12">
+					<!-- Section Tittle -->
+					<div class="section-tittle mb-70">
+						<span>{{ entry.d7TopServices }}</span>
+						<h2>{{ entry.d7BestServices }}</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="single-cat text-center mb-50">
+						<div class="cat-icon">
+							<span class="flaticon-development"></span>
+						</div>
+						<div class="cat-cap">
+							<h5>
+								<a href="services.html">{{ entry.d7ServiceTitle1 }}</a>
+							</h5>
+							<p>{{ entry.d7ServiceContent }}</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="single-cat text-center mb-50">
+						<div class="cat-icon">
+							<span class="flaticon-result"></span>
+						</div>
+						<div class="cat-cap">
+							<h5>
+								<a href="services.html">{{ entry.d7ServiceTitle2 }}</a>
+							</h5>
+							<p>{{ entry.d7ServiceContent }}</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="single-cat text-center mb-50">
+						<div class="cat-icon">
+							<span class="flaticon-team"></span>
+						</div>
+						<div class="cat-cap">
+							<h5>
+								<a href="services.html">{{ entry.d7ServiceTitle3 }}</a>
+							</h5>
+							<p>{{ entry.d7ServiceContent }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Services Area End -->
+	<!--? About Area Start-->
+	<div class="support-company-area pt-100 pb-100 section-bg fix" data-background="assets/img/gallery/section_bg02.jpg">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-xl-6 col-lg-6">
+					<div class="support-location-img">
+						<img src="assets/img/gallery/about.png" alt="">
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-6">
+					<div
+						class="right-caption">
+						<!-- Section Tittle -->
+						<div class="section-tittle section-tittle2 mb-50">
+							<span>{{ entry.d7TopServices }}</span>
+							<h2>{{ entry.d7BestServices }}</h2>
+						</div>
+						<div class="support-caption">
+                            {{ entry.supportCaption }}
+                            {{ entry.moreAboutUs2 }}
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- About Area End-->
+	<!--? Services Ara Start -->
+	<div class="services-area section-padding3">
+		<div class="container">
+			<div class="row">
+				<div
+					class="cl-xl-7 col-lg-8 col-md-10">
+					<!-- Section Tittle -->
+					<div class="section-tittle mb-70">
+						<span>{{ entry.d7Portfolios }}</span>
+						<h2>{{ entry.d7CaseStudy }}</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+                {% for service in entry.ourTopServices.all() %}
+                {% set photo = service.photo.one() %}
+				<div class="col-lg-6 col-md-6 col-sm-10">
+					<div class="single-services mb-100">
+						<div class="services-img">
+							<img src="{{ photo.url }}" alt="">
+						</div>
+						<div class="services-caption">
+							<span>{{ service.serviceType }}</span>
+							<p><a href="#">{{ service.serviceDetails }}</a></p>
+						</div>
+					</div>
+				</div>
+                {% endfor %}
+			</div>
+		</div>
+	</div>
+	<!-- Services Ara End -->
+	<!--? Testimonial Start -->
+	<div class="testimonial-area testimonial-padding" data-background="assets/img/gallery/section_bg04.jpg">
+		<div class="container ">
+			<div class="row d-flex justify-content-center">
+				<div class="col-xl-10 col-lg-10 col-md-9">
+					<div
+						class="h1-testimonial-active">
+						<!-- Single Testimonial -->
+
+                        {% for testimonial in entry.testimonials.all() %}
+                        {% set photo = testimonial.photo.one() %}
+						<div
+							class="single-testimonial text-center">
+							<!-- Testimonial Content -->
+							<div class="testimonial-caption ">
+								<div class="testimonial-top-cap">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67px" height="49px">
+										<path fill-rule="evenodd" fill="rgb(240, 78, 60)" d="M57.053,48.209 L42.790,48.209 L52.299,29.242 L38.036,29.242 L38.036,0.790 L66.562,0.790 L66.562,29.242 L57.053,48.209 ZM4.755,48.209 L14.263,29.242 L0.000,29.242 L0.000,0.790 L28.527,0.790 L28.527,29.242 L19.018,48.209 L4.755,48.209 Z"/>
+									</svg>
+									<p>{{ testimonial.description }}</p>
+								</div>
+								<!-- founder -->
+								<div class="testimonial-founder d-flex align-items-center justify-content-center">
+									<div class="founder-img">
+										<img src="{{ photo.url }}" alt="{{ testimonial.fullName }}">
+									</div>
+									<div class="founder-text">
+										<span>{{ testimonial.fullName }}</span>
+										<p>{{ testimonial.designation }}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+                        {% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Testimonial End -->
+	<!-- Coun Down Start -->
+	<div class="count-down-area pb-120">
+		<div class="container">
+			<div class="row justify-content-between">
+                {% for counterUp in entry.counterUp.all() %}
+				<div
+					class="col-lg-3 col-md-6 col-sm-6">
+					<!-- Counter Up -->
+					<div class="single-counter text-center">
+						<span class="counter">{{ counterUp.counter }}</span>
+						<p>{{ counterUp.counterName }}</p>
+					</div>
+				</div>
+                {% endfor %}
+			</div>
+		</div>
+	</div>
+	<!-- Coun Down End -->
+	<!-- Team Start -->
+	<div class="team-area section-padding30">
+		<div class="container">
+			<div class="row">
+				<div
+					class="cl-xl-7 col-lg-8 col-md-10">
+					<!-- Section Tittle -->
+                    {{ entry.ourMembersTitle }}
+				</div>
+			</div>
+            {# This section will be read and updated from the database #}
+			<div class="row">
+				<!-- single Tem -->
+                {% for teamMember in entry.teamMembers.all() %}
+                {% set photo = teamMember.photo.one() %}
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+					<div class="single-team mb-30">
+						<div class="team-img">
+                            <img src="{{ photo.url }}" alt="{{ teamMember.membername }}">
+						</div>
+						<div class="team-caption">
+							<h3>
+								<a href="#">{{ teamMember.membername }}</a>
+							</h3>
+							<span>{{ teamMember.memberDesignation }}</span>
+						</div>
+					</div>
+				</div>
+                {% endfor %}
+			</div>
+		</div>
+	</div>
+	<!-- Team End -->
+	<!-- Want To work -->
+	<section class="wantToWork-area w-padding2 section-bg" data-background="assets/img/gallery/section_bg03.jpg">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+                <div class="col-xl-7 col-lg-9 col-md-8">
+                    <div class="wantToWork-caption wantToWork-caption2">
+                        <h2>{{ entry.search4Consultant }}</h2>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4">
+                    {{ entry.moreAboutUs }}
+                </div>
+			</div>
+		</div>
+	</section>
+	<!-- Want To work End -->
+	<!-- Blog Area Start -->
+	<div class="home-blog-area section-padding30">
+		<div
+			class="container">
+			<!-- Section Tittle -->
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="section-tittle mb-100">
+						<span>{{ entry.recentBlogTitle }}</span>
+						<h2>{{ entry.recentNewsTitle }}</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+                {% for news in entry.recentNews.all() %}
+                {% set photo = news.photo.one() %}
+				<div class="col-xl-6 col-lg-6 col-md-6">
+					<div class="home-blog-single mb-30">
+						<div class="blog-img-cap">
+							<div class="blog-img">
+								<img src="{{ photo.url }}" alt="recent news">
+								<ul>
+									<li>{{ news.authorAndDate }}</li>
+								</ul>
+							</div>
+							<div class="blog-cap">
+								<h3><a href="blog_details.html">{{ news.shortDetails }}</a></h3>
+                                {{ news.description }}
+							</div>
+						</div>
+					</div>
+				</div>
+                {% endfor %}
+			</div>
+		</div>
+	</div>
+	<!-- Blog Area End -->
+	<!-- Brand Area Start -->
+	<div class="brand-area pb-140">
+		<div class="container">
+			<div class="brand-active brand-border pb-40">
+                {% for item in entry.brands.all() %}
+                {% set photo = item.brand.one() %}
+				<div class="single-brand">
+					<img src="{{ photo.url }}" alt="">
+				</div>
+                {% endfor %}
+			</div>
+		</div>
+	</div>
+	<!-- Brand Area End -->
+
+{% endblock %}

@@ -1,0 +1,55 @@
+field: 94e9c477-d4a0-4078-a7e3-6a31bc34940b # Brands
+fieldLayouts:
+  a2ce3701-d41d-4350-b5af-c309dff35fc0:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: be7b38c1-a90f-486c-837f-1cac7058f678 # Brand
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  be7b38c1-a90f-486c-837f-1cac7058f678: # Brand
+    contentColumnType: string
+    fieldGroup: null
+    handle: brand
+    instructions: ''
+    name: Brand
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+      defaultUploadLocationSubpath: ''
+      limit: ''
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: addBrand
+name: 'Add Brand'
+sortOrder: 1

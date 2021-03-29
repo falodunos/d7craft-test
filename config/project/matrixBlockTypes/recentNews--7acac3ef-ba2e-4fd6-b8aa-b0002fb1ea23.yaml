@@ -1,0 +1,149 @@
+field: 25903487-0e0d-453f-85b6-e376ace9d037 # Recent News
+fieldLayouts:
+  1821ef3c-8fca-4570-b9ab-ed146aa1b5dc:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: bb964b80-be13-40f6-83f0-c10b33156d6a # photo
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 1830de92-914d-4758-95ab-b16146a0aaab # Author And Date
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 48cf35aa-e349-4d5a-a974-599c30a8d274 # Short Details
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: fd56476e-ad86-4114-b8b0-276eaff496e9 # Description
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  48cf35aa-e349-4d5a-a974-599c30a8d274: # Short Details
+    contentColumnType: text
+    fieldGroup: null
+    handle: shortDetails
+    instructions: ''
+    name: 'Short Details'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'Short Description'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  1830de92-914d-4758-95ab-b16146a0aaab: # Author And Date
+    contentColumnType: text
+    fieldGroup: null
+    handle: authorAndDate
+    instructions: ''
+    name: 'Author And Date'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'Author And Date'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  bb964b80-be13-40f6-83f0-c10b33156d6a: # photo
+    contentColumnType: string
+    fieldGroup: null
+    handle: photo
+    instructions: ''
+    name: photo
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  fd56476e-ad86-4114-b8b0-276eaff496e9: # Description
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: ''
+    name: Description
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes:
+        - 70526dc9-81b4-4ef6-916c-509abbde8927 # Uploads
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: recentNews
+name: 'Recent News'
+sortOrder: 1

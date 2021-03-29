@@ -1,0 +1,139 @@
+field: 9613c6c6-1a1a-4aa2-83c9-737fe8957c1d # Testimonials
+fieldLayouts:
+  d062342a-69be-4284-a789-4c7564170300:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 4a417a56-2cbf-4e53-97ef-199230f53edd # photo
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 984a6aa1-0055-497b-b6c7-4d9bd1d01be3 # Description
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0a2379c8-3620-40cc-835e-33ae58a60381 # Full Name
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 4e436dc4-7839-4e64-a01e-2dddfa90d2bf # Designation
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0a2379c8-3620-40cc-835e-33ae58a60381: # Full Name
+    contentColumnType: text
+    fieldGroup: null
+    handle: fullName
+    instructions: ''
+    name: 'Full Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  4a417a56-2cbf-4e53-97ef-199230f53edd: # photo
+    contentColumnType: string
+    fieldGroup: null
+    handle: photo
+    instructions: ''
+    name: photo
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  4e436dc4-7839-4e64-a01e-2dddfa90d2bf: # Designation
+    contentColumnType: text
+    fieldGroup: null
+    handle: designation
+    instructions: ''
+    name: Designation
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  984a6aa1-0055-497b-b6c7-4d9bd1d01be3: # Description
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: ''
+    name: Description
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '3'
+      multiline: '1'
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: testimonial
+name: Testimonial
+sortOrder: 1

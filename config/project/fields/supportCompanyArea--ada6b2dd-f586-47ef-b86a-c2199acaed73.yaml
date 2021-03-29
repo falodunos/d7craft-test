@@ -1,0 +1,33 @@
+contentColumnType: string
+fieldGroup: 843ed1ec-c223-47af-aad5-0af1b79b0f89 # Home Page
+handle: supportCompanyArea
+instructions: support-company-area
+name: 'Support Company Area'
+searchable: false
+settings:
+  allowSelfRelations: false
+  allowUploads: true
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  previewMode: full
+  restrictFiles: '1'
+  selectionLabel: 'Background Image Support Company Area'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: false
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

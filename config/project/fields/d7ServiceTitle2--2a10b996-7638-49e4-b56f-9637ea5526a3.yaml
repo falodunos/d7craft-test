@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: 843ed1ec-c223-47af-aad5-0af1b79b0f89 # Home Page
+handle: d7ServiceTitle2
+instructions: ''
+name: 'D7 Service Title 2'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

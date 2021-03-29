@@ -1,0 +1,121 @@
+field: 3a99dec1-26e3-4c89-aedd-2e1559ad9db5 # Our Top Services
+fieldLayouts:
+  998cfa42-3145-4dd8-8b2a-05ec342b5106:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 0497c02d-2e5b-486d-8c9e-51ff46f03279 # Photo
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 6de95336-5de9-4332-9f5b-644dee77293d # Service Type
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0054ab0c-00b8-423b-a530-3e92921cff78 # Service Details
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  6de95336-5de9-4332-9f5b-644dee77293d: # Service Type
+    contentColumnType: text
+    fieldGroup: null
+    handle: serviceType
+    instructions: ''
+    name: 'Service Type'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: 'Service Type'
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  0054ab0c-00b8-423b-a530-3e92921cff78: # Service Details
+    contentColumnType: text
+    fieldGroup: null
+    handle: serviceDetails
+    instructions: ''
+    name: 'Service Details'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes:
+        - 70526dc9-81b4-4ef6-916c-509abbde8927 # Uploads
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  0497c02d-2e5b-486d-8c9e-51ff46f03279: # Photo
+    contentColumnType: string
+    fieldGroup: null
+    handle: photo
+    instructions: ''
+    name: Photo
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: ourTopServices
+name: 'Add Service'
+sortOrder: 1

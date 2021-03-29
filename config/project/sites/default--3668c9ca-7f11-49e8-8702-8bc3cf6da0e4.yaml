@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: 'Desevens Digital'
+primary: true
+siteGroup: a63e693a-8116-49ab-9916-d3045a8cf4d1 # Desevens Digital
+sortOrder: 1

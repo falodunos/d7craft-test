@@ -1,0 +1,15 @@
+contentColumnType: datetime
+fieldGroup: 61662a2e-860d-4a3c-bbd2-08f6cfc191ce # Common
+handle: date
+instructions: ''
+name: Date
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: '30'
+  showDate: true
+  showTime: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

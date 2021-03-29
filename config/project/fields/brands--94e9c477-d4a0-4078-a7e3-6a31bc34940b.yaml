@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 61662a2e-860d-4a3c-bbd2-08f6cfc191ce # Common
+handle: brands
+instructions: Brands
+name: Brands
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_brands}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

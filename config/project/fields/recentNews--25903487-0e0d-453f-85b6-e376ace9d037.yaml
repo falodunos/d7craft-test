@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 843ed1ec-c223-47af-aad5-0af1b79b0f89 # Home Page
+handle: recentNews
+instructions: ''
+name: 'Recent News'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_recentnews}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

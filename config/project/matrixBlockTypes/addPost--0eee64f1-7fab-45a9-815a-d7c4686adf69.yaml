@@ -1,0 +1,207 @@
+field: 72435f03-2da9-4414-ba74-907c4b13a09e # Post Content
+fieldLayouts:
+  aeb8d2a4-3e4b-4e5f-9a97-f3c367fd4c0c:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 1acd59af-f8fd-476d-a974-b660f1c9ce95 # Image
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 82fb23bb-484f-4b97-a944-e7b448b8ca41 # Date
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: df946e5e-971d-42ab-8972-98af83a660c0 # Headline
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: de33da94-69ad-4314-b77e-d49dabefe208 # Short Description
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 30e938d2-5b6b-48d1-9c3c-1e41d6592072 # Category
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 03b04bf7-2669-4bc3-8331-a3cbad87ef7f # Comments
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  1acd59af-f8fd-476d-a974-b660f1c9ce95: # Image
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: ''
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      defaultUploadLocationSource: 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+      defaultUploadLocationSubpath: ''
+      limit: '1'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: '1'
+      selectionLabel: ''
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:70526dc9-81b4-4ef6-916c-509abbde8927' # Uploads
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  03b04bf7-2669-4bc3-8331-a3cbad87ef7f: # Comments
+    contentColumnType: text
+    fieldGroup: null
+    handle: comments
+    instructions: ''
+    name: Comments
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  30e938d2-5b6b-48d1-9c3c-1e41d6592072: # Category
+    contentColumnType: string
+    fieldGroup: null
+    handle: category
+    instructions: ''
+    name: Category
+    searchable: false
+    settings:
+      allowLimit: false
+      allowMultipleSources: false
+      allowSelfRelations: false
+      branchLimit: ''
+      limit: null
+      localizeRelations: false
+      selectionLabel: ''
+      showSiteMenu: true
+      source: 'group:ca617645-541f-4eda-88ca-31e4a395b882' # Blog Categories
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Categories
+  82fb23bb-484f-4b97-a944-e7b448b8ca41: # Date
+    contentColumnType: datetime
+    fieldGroup: null
+    handle: date
+    instructions: ''
+    name: Date
+    searchable: false
+    settings:
+      max: null
+      min: null
+      minuteIncrement: '30'
+      showDate: true
+      showTime: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Date
+  de33da94-69ad-4314-b77e-d49dabefe208: # Short Description
+    contentColumnType: text
+    fieldGroup: null
+    handle: shortDescription
+    instructions: ''
+    name: 'Short Description'
+    searchable: false
+    settings:
+      availableTransforms: '*'
+      availableVolumes:
+        - 70526dc9-81b4-4ef6-916c-509abbde8927 # Uploads
+      cleanupHtml: true
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: ''
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showHtmlButtonForNonAdmins: ''
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  df946e5e-971d-42ab-8972-98af83a660c0: # Headline
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: ''
+    name: Headline
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: addPost
+name: 'Add Post'
+sortOrder: 1

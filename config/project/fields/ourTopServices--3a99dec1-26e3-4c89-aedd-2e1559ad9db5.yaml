@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 843ed1ec-c223-47af-aad5-0af1b79b0f89 # Home Page
+handle: ourTopServices
+instructions: ''
+name: 'Our Top Services'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_ourtopservices}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,68 @@
+field: 48139ded-7ade-4bc8-8041-3f5212a9af19 # Counter Up
+fieldLayouts:
+  7427155a-c9ad-4d6f-b86a-11dc30812b87:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 2d6e158e-9d1d-4e3d-9143-e2f58e2a9d16 # Counter Name
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 11765840-da33-48e9-87d2-821edc6e2bab # Counter
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  2d6e158e-9d1d-4e3d-9143-e2f58e2a9d16: # Counter Name
+    contentColumnType: text
+    fieldGroup: null
+    handle: counterName
+    instructions: ''
+    name: 'Counter Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  11765840-da33-48e9-87d2-821edc6e2bab: # Counter
+    contentColumnType: text
+    fieldGroup: null
+    handle: counter
+    instructions: ''
+    name: Counter
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: counterUp
+name: 'Counter Up'
+sortOrder: 1

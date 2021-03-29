@@ -1,0 +1,49 @@
+fieldLayouts:
+  3b0983ae-a5f9-4c08-b8b0-4edd46e10fe2:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: b1b95786-9eaf-4b39-9d58-31e040d74851
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: blogCategories
+name: 'Blog Categories'
+siteSettings:
+  3668c9ca-7f11-49e8-8702-8bc3cf6da0e4: # Desevens Digital
+    hasUrls: true
+    template: blog/_category
+    uriFormat: 'blog/categories/{slug}'
+structure:
+  maxLevels: 1
+  uid: 7c4b7c81-288a-419c-a0a4-c4c27a2432bf
